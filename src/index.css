@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+div {
+  color: #14274e;
+}
+
+.flex-basic-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-basic-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  background: #14274e;
+  color: #fff;
+  height: 50px;
+  border-radius: 4px;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-main {
+  background: #14274e;
+}
+
+.btn.disabled {
+  background: #455d8d;
+}
+
+.btn-main:hover {
+  background: #394867;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid #14274e;
+  color: #14274e;
+}
+
+.btn-primary:hover {
+  background: #394867;
+  color: #fff;
+}
+/* Button */
+
+.wrapper-card-items {
+  display: flex;
+  column-gap: 4rem;
+  flex-wrap: wrap;
+  row-gap: 6rem;
+  padding-top: 7rem;
+}
+
+.card-items {
+  width: 30%;
+  height: 200px;
+  box-shadow: 0px 4px 20px 0px rgba(72, 119, 159, 0.18);
+  position: relative;
+  cursor: pointer;
+}
+
+.card-image-pizza {
+  width: 200px;
+  position: absolute;
+  top: -90px;
+  left: 22.5%;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  background: #14274e;
+}
+
+/* Text field */
+.text-field {
+  padding: 0.8rem 1rem;
+  background: #f5f5f5;
+  border: none;
+  outline: none;
+  color: #14274e;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.text-field:focus {
+  border: 1px solid #14274e;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+/* Text field */
+
+/* Loading Spinner */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #14274e;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #14274e transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Loading Spinner */
+
+/* Modal Component */
+.wrapper-modal {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-modal .modal-body {
+  height: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+/* Modal Component */
+
+
+/* Create Pizza Page */
+.wrapper-create {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-control {
+  display: flex; /* Dùng flexbox */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-top: 2rem;
+}
+
+.form-label {
+  width: 150px; /* Đặt độ rộng cố định cho nhãn */
+  text-align: left; /* Căn trái chữ */
+  font-size: 1rem;
+  color: #333; /* Màu chữ */
+}
+
+input {
+  flex: 1; /* Input chiếm hết không gian còn lại */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
